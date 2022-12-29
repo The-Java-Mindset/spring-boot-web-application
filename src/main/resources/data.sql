@@ -1,0 +1,2 @@
+INSERT INTO Books (uuid, title, author, isbn) VALUES ('ed690645-ea72-4e77-b3c0-3190109ded22', 'Clean Code', 'Robert Cecil Martin', '9780132350884');
+INSERT INTO Books (uuid, title, author, isbn) VALUES ('363255f8-4fc6-4a4f-b4e4-4d07ac00903a', 'Effective Java', 'Joshua Bloch', '9780321356680');
