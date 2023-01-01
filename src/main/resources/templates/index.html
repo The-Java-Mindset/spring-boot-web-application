@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+</head>
+<body>
+    <h1>Library Management System</h1>
+    <hr>
+
+    <table border="1px">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each="book : ${books}">
+                <td th:text="${book.title}"></td>
+                <td th:text="${book.author}"></td>
+                <td th:text="${book.isbn}"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <div>
+            Author: The Java Mindset
+        </div>
+    </footer>
+</body>
+</html>
