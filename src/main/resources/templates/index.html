@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Library Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
+<div class="container">
     <h1>Library Management System</h1>
     <hr>
 
-    <table border="1px">
+    <a class="btn btn-primary">Add Book</a>
+    <table class="table table-striped">
         <thead>
         <tr>
             <th>Title</th>
             <th>Author</th>
             <th>ISBN</th>
+
         </tr>
         </thead>
         <tbody>
-            <tr th:each="book : ${books}">
-                <td th:text="${book.title}"></td>
-                <td th:text="${book.author}"></td>
-                <td th:text="${book.isbn}"></td>
-            </tr>
+        <tr th:each="book : ${books}">
+            <td th:text="${book.title}"></td>
+            <td th:text="${book.author}"></td>
+            <td th:text="${book.isbn}"></td>
+        </tr>
         </tbody>
     </table>
 
     <footer>
-        <div>
+        <div class="text-center p-3">
             Author: The Java Mindset
         </div>
     </footer>
+</div>
 </body>
 </html>
